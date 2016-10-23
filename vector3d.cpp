@@ -82,10 +82,10 @@ vector3d vector3d::operator^(const vector3d other) const{
     return vector3d(y*other.z-z*other.y,z*other.x-x*other.z,x*other.y-y*other.x);
 
 }
-vector3d vector3d::operator*(const double n) const{
+vector3d vector3d::operator*(const int n) const{
     return vector3d(n*x,n*y,n*z);
 }
-vector3d operator*(const double n,const vector3d b) const{
+vector3d operator*(const int n,const vector3d b) const{
     return b*n;
 }
 double vector3d::length() const{
